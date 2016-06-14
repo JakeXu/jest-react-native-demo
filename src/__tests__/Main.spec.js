@@ -1,3 +1,4 @@
+import React from 'react';
 import Main from '../Main';
 import { shallow } from 'enzyme';
 
