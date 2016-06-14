@@ -21,5 +21,28 @@
     "jest": "^12.1.1",
     "jest-cli": "^12.1.1",
     "react-native-mock": "^0.2.3"
+  },
+  "jest": {
+    "haste": {
+      "defaultPlatform": "ios",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "providesModuleNodeModules": [
+        "fbjs",
+        "react",
+        "react-native"
+      ]
+    },
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react/",
+      "<rootDir>/node_modules/react-dom/",
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/react-native",
+      "<rootDir>/node_modules/react-native-mock",
+      "<rootDir>/node_modules/react-addons-test-utils/"
+    ]
   }
 }
