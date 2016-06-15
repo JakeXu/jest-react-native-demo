@@ -12,13 +12,16 @@ import {
 } from 'react-native';
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    console.log('constructor called');
+  }
+  componentDidMount() {
+    console.log('component mounted');
+  }
   render() {
-    return (
-      <View>
-        <Text>Main Component</Text>
-      </View>
-    );
+    return (<View key='main-key'><Text>Main Component</Text></View>);
   }
 }
-
+Main.exportedProp = 'exportedProp';
 export default Main;

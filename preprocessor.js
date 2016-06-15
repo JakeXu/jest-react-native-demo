@@ -2,6 +2,7 @@
 
 const babel = require('babel-core');
 const jestPreset = require('babel-preset-jest');
+const reactPreset = require('babel-preset-react');
 const reactNativePreset = require('babel-preset-react-native');
 
 module.exports = {
